@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congregación El Parque-Tres Ríos</title>
+    <link rel="stylesheet" href="stylesElParque.css">
+</head>
+<body>
+
+    <!-- Menú Lateral -->
+    <div id="miMenuLateral" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="cerrarMenu()">&times;</a>
+        <a href="#zoom-reuniones" onclick="cerrarMenu()">Zoom: Reuniones</a>
+        <a href="#zoom-predicacion" onclick="cerrarMenu()">Zoom: Predicación</a>
+        <a href="#privilegios" onclick="cerrarMenu()">Privilegios y Responsabilidades</a>
+        <a href="#grupos" onclick="cerrarMenu()">Grupos de Predicación</a>
+        <a href="#territorios" onclick="cerrarMenu()">Territorios y Puntos de Encuentro</a>
+    </div>
+    
+    <div id="fondoOscuro" onclick="cerrarMenu()"></div>
+    
+    <!-- Contenido Principal -->
+    <div id="main">
+        <button class="openbtn" onclick="abrirMenu()">&#9776;</button>
+
+        <div class="container">
+            <div class="header">
+                <h1>Congregación El Parque-Tres Ríos</h1>
+                <p>Información General y Organización de Grupos</p>
+            </div>
+
+            <!-- Sección: Reuniones de congregación -->
+            <div id="zoom-reuniones" class="section">
+                <h2 class="section-title bg-entre-semana">Reuniones de congregación (Publicadores y/o estudiantes)</h2>
+                <div class="section-content">
+                    <p>
+                        <strong>ID de reunión:</strong> <span id="id-reunion">836 8013 3440</span> 
+                        <button class="btn-copiar" onclick="copiarTexto('id-reunion')">Copiar</button>
+                    </p>
+                    <p style="margin-top: 10px;">
+                        <strong>Código de acceso:</strong> <span id="pass-reunion">206064</span> 
+                        <button class="btn-copiar" onclick="copiarTexto('pass-reunion')">Copiar</button>
+                    </p>
+                    <br>
+                    <a href="https://jworg.zoom.us/j/83680133440?pwd=zbEFGEnjToTTvSPwaQFtCWHbOETrnb.1" target="_blank" class="btn-zoom">Ingresar a Zoom</a>
+                </div>
+            </div>
+
+            <!-- Sección: Predicación -->
+            <div id="zoom-predicacion" class="section">
+                <h2 class="section-title bg-servicio">Predicación (Solo publicadores)</h2>
+                <div class="section-content">
+                    <p>
+                        <strong>ID de reunión:</strong> <span id="id-predicacion">891 9017 9967</span> 
+                        <button class="btn-copiar" onclick="copiarTexto('id-predicacion')">Copiar</button>
+                    </p>
+                    <p style="margin-top: 10px;">
+                        <strong>Código de acceso:</strong> <span id="pass-predicacion">533029</span> 
+                        <button class="btn-copiar" onclick="copiarTexto('pass-predicacion')">Copiar</button>
+                    </p>
+                    <br>
+                    <a href="https://jworg.zoom.us/j/89190179967?pwd=MHxtlqqbuaGq5apmzyNu9tjIt08MwK.1" target="_blank" class="btn-zoom">Ingresar a Zoom</a>
+                </div>
+            </div>
+
+            <!-- Sección 1: Privilegios y Responsabilidades -->
+            <div id="privilegios" class="section">
+                <h2 class="section-title bg-entre-semana">Privilegios y Responsabilidades</h2>
+                <div class="section-content">
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <strong>Vida y Ministerio:</strong>
+                            <span>Encargado: Danier Obando</span>
+                            <span>Auxiliar: Carlos Núñez Vega</span>
+                        </div>
+                        <div class="service-card">
+                            <strong>Contabilidad:</strong>
+                            <span>Encargado: Carlos Núñez Vargas</span>
+                            <span>Auxiliar: Luis Hernández</span>
+                        </div>
+                        <div class="service-card">
+                            <strong>Territorios:</strong>
+                            <span>Encargado: Josías Bravo</span>
+                            <span>Auxiliar: Roberto Vargas</span>
+                        </div>
+                        <div class="service-card">
+                            <strong>Publicaciones y Literatura:</strong>
+                            <span>Encargado: Josías Bravo / Carlos Núñez Vega</span>
+                            <span>Auxiliar: Joshua Hernández</span>
+                        </div>
+                        <div class="service-card">
+                            <strong>Predicación Pública:</strong>
+                            <span>Encargado: Luis Solera</span>
+                            <span>Auxiliar: Josué Cortés</span>
+                        </div>
+                        <div class="service-card">
+                            <strong>Audio, Video y Programación:</strong>
+                            <span>Encargado: William García</span>
+                        </div>
+                        <div class="service-card">
+                            <strong>Conducción de La Atalaya:</strong>
+                            <span>Encargado: Odir Hernández</span>
+                            <span>Auxiliares: Christian Rosales, Ibhar Solera</span>
+                        </div>
+                        <div class="service-card">
+                            <strong>Comité de Mantenimiento:</strong>
+                            <span>Encargado: Ibhar Solera</span>
+                            <span>Auxiliar: Roberto Vargas</span>
+                        </div>
+                        <div class="service-card">
+                            <strong>Discursos Públicos:</strong>
+                            <span>Encargado: William García</span>
+                            <span>Auxiliar: Walter Alfaro</span>
+                        </div>
+                        <div class="service-card">
+                            <strong>Caja en Efectivo:</strong>
+                            <span>Encargado: Joshua Hernández</span>
+                            <span>Auxiliar: Luis Solera</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección 2: Grupos de Predicación -->
+            <div id="grupos" class="section">
+                <h2 class="section-title bg-servicio">Grupos para el Servicio del Campo</h2>
+                <div class="section-content">
+                    
+                    <!-- Grupo 1 -->
+                    <div class="group-box">
+                        <h3 class="group-title">Grupo 1: Montufar (21 publicadores)</h3>
+                        <p class="group-leaders">
+                            <strong>Sup. de Grupo:</strong> Hernández, Odir F. | 
+                            <strong>Auxiliar:</strong> Morales, Luis A.
+                        </p>
+                        <ul class="member-list">
+                            <li>Aguilar, Jeannette</li>
+                            <li>Baldizón Montes, Ana Luisa</li>
+                            <li>Cambronero, Ana</li>
+                            <li>Cedeño Céspedes, Celeste</li>
+                            <li>Cedeño Céspedes, Sofía</li>
+                            <li>Hernández C, Angelita</li>
+                            <li>Hernández Pandolfi, Joshua E.</li>
+                            <li>Hernández, Katherine de</li>
+                            <li>Monge, Maribel</li>
+                            <li>Morales, Rosa de</li>
+                            <li>Muñoz, Julio</li>
+                            <li>Muñoz, Sara de</li>
+                            <li>René Montes, Silvia</li>
+                            <li>Rodríguez, Omar</li>
+                            <li>Rojas, Humberto</li>
+                            <li>Rojas, María de</li>
+                            <li>Rojas, Maricela</li>
+                            <li>Tellería, Marita</li>
+                            <li>Velásquez, Argentina de</li>
+                        </ul>
+                    </div>
+
+                    <!-- Grupo 2 -->
+                    <div class="group-box">
+                        <h3 class="group-title">Grupo 2: Florencio (19 publicadores)</h3>
+                        <p class="group-leaders">
+                            <strong>Sup. de Grupo:</strong> Bravo, Josías | 
+                            <strong>Auxiliar:</strong> Astorga Solano, Mario
+                        </p>
+                        <ul class="member-list">
+                            <li>Bravo, Daniela de</li>
+                            <li>Bravo, Jorge</li>
+                            <li>Bravo, Marlene de</li>
+                            <li>Chaves Solano, Luis</li>
+                            <li>Fonseca Solís, Nuria</li>
+                            <li>Fonseca, Alexandra</li>
+                            <li>Fonseca, Gerardo</li>
+                            <li>López, Ismaris</li>
+                            <li>Mesén López, Lucy de</li>
+                            <li>Rodríguez Araya, Dylan</li>
+                            <li>Rodríguez, José</li>
+                            <li>Rodríguez, Mónica de</li>
+                            <li>Ruiz, Nydia</li>
+                            <li>Solís Hidalgo, Andrés</li>
+                            <li>Umaña, Mario</li>
+                            <li>Zamora, Esteban</li>
+                            <li>Zamora, Samantha</li>
+                        </ul>
+                    </div>
+
+                    <!-- Grupo 3 -->
+                    <div class="group-box">
+                        <h3 class="group-title">Grupo 3: Tres Ríos (22 publicadores)</h3>
+                        <p class="group-leaders">
+                            <strong>Sup. de Grupo:</strong> García, William | 
+                            <strong>Auxiliar:</strong> Alfaro Alfaro, Walter
+                        </p>
+                        <ul class="member-list">
+                            <li>Alfaro Araya, Sonia de</li>
+                            <li>Calderón, Gilberth</li>
+                            <li>Calderón, Mary de</li>
+                            <li>Calderón, Nancy de</li>
+                            <li>Calderón, Rosalba</li>
+                            <li>Céspedes, Katia</li>
+                            <li>García, Ericka de</li>
+                            <li>García, Joel</li>
+                            <li>García, Samuel</li>
+                            <li>Gómez Céspedes, Suamy</li>
+                            <li>Jara Arenas, Zelma</li>
+                            <li>Jiménez Zamora, Daniela</li>
+                            <li>Montero L, Jacqueline de</li>
+                            <li>Piedra, Guiselle</li>
+                            <li>Quesada Orozco, María L.</li>
+                            <li>Rosales, Magvenia de</li>
+                            <li>Sandoval F, Manuel</li>
+                            <li>Sandoval R, Roxana de</li>
+                            <li>Sandoval Rojas, Angie</li>
+                            <li>Sandoval Rojas, Keissy</li>
+                        </ul>
+                    </div>
+
+                    <!-- Grupo 4 -->
+                    <div class="group-box">
+                        <h3 class="group-title">Grupo 4: Salón del Reino (15 publicadores)</h3>
+                        <p class="group-leaders">
+                            <strong>Sup. de Grupo:</strong> Vargas Chaves, Roberto | 
+                            <strong>Auxiliar:</strong> Solera Sanabria, Luis G.
+                        </p>
+                        <ul class="member-list">
+                            <li>Berrocal Rodríguez, Randall</li>
+                            <li>Bonilla Villalobos, Vera V. de</li>
+                            <li>Cortés Obando, Daniela A. de</li>
+                            <li>Cortés Villalobos, Josué E.</li>
+                            <li>Delgadillo C, Alexandra M.</li>
+                            <li>Ramírez Mora, Hilda</li>
+                            <li>Salazar Alvarado, Minor</li>
+                            <li>Salazar Díaz, Lourdes de</li>
+                            <li>Salazar Díaz, Natalia I.</li>
+                            <li>Solera D, Danitza de</li>
+                            <li>Vargas Boza, Fabián</li>
+                            <li>Vargas, Mayela de</li>
+                            <li>Vargas, Patsy de</li>
+                        </ul>
+                    </div>
+
+                    <!-- Grupo 5 -->
+                    <div class="group-box">
+                        <h3 class="group-title">Grupo 5: Carpintera (21 publicadores)</h3>
+                        <p class="group-leaders">
+                            <strong>Sup. de Grupo:</strong> Obando Morales, Danier A. | 
+                            <strong>Auxiliar:</strong> Rosales, Christian
+                        </p>
+                        <ul class="member-list">
+                            <li>Badilla Borbón, Sara</li>
+                            <li>Castañeda Centeno, Kaleb A.</li>
+                            <li>Centeno Gómez, Nancy</li>
+                            <li>Centeno, Ángel</li>
+                            <li>Cubillo Solís, Jaime J.</li>
+                            <li>Cubillo, María Elena</li>
+                            <li>González Munguía, Nohemí</li>
+                            <li>Jiménez M, Loyde N. de</li>
+                            <li>Jiménez, Ruth</li>
+                            <li>Navarro Zúñiga, Allison T.</li>
+                            <li>Obando M, Nidia M. de</li>
+                            <li>Ortiz Mairena, Jenny M.</li>
+                            <li>Rosales, Rebeca de</li>
+                            <li>Saballos Silva, Pilar</li>
+                            <li>Solano Chacón, Luz M. de</li>
+                            <li>Vega C, Andrea de</li>
+                            <li>Vega Vega, Álvaro</li>
+                            <li>Zúñiga B, Elena P.</li>
+                            <li>Zúñiga Z, Eusebio A.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Grupo 6 -->
+                    <div class="group-box">
+                        <h3 class="group-title">Grupo 6: San Vicente (21 publicadores)</h3>
+                        <p class="group-leaders">
+                            <strong>Sup. de Grupo:</strong> Solera Quesada, Ibhar D. | 
+                            <strong>Auxiliar:</strong> Hernández Calvo, Luis
+                        </p>
+                        <ul class="member-list">
+                            <li>Amador Ureña, Juseth</li>
+                            <li>Amador Ureña, Marcia M. de</li>
+                            <li>Amador Ureña, Mirian R.</li>
+                            <li>García C, Lissbeth de</li>
+                            <li>Jiménez J, Evangelina M.</li>
+                            <li>López Montano, Alexander</li>
+                            <li>López Montano, Dayana de</li>
+                            <li>López Vanegas, Wilber</li>
+                            <li>Monge Mora, Pablo E.</li>
+                            <li>Mora Álvarez, Yara S.</li>
+                            <li>Navarro Mesén, Yamileth</li>
+                            <li>Núñez Vargas, Carlos E.</li>
+                            <li>Núñez Vargas, Charlene</li>
+                            <li>Núñez Vargas, Kricia de</li>
+                            <li>Núñez Vega, Carlos E.</li>
+                            <li>Osejo Miranda, Massiel</li>
+                            <li>Solera A, Tatiana G. de</li>
+                            <li>Villachica, Guiselle</li>
+                            <li>Villachica, Martha de</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sección 3: Territorios y Puntos de Encuentro -->
+            <div id="territorios" class="section">
+                <h2 class="section-title bg-especiales">Territorios y Puntos de Encuentro</h2>
+                <div class="section-content service-grid">
+                    <div class="service-card">
+                        <strong>Grupo 1: Montufar</strong>
+                        <p><strong>Territorios:</strong> 1 al 18</p>
+                        <p><strong>Puntos de encuentro:</strong> Familia Morales, Hnos. Julio y Zara, Familia Hernández Jiménez, Hna. Jeannette Aguilar.</p>
+                    </div>
+                    <div class="service-card">
+                        <strong>Grupo 2: Florencio</strong>
+                        <p><strong>Territorios:</strong> 19 al 31</p>
+                        <p><strong>Puntos de encuentro:</strong> Familia Bravo, Hna. Ismaris López.</p>
+                    </div>
+                    <div class="service-card">
+                        <strong>Grupo 3: Tres Ríos</strong>
+                        <p><strong>Territorios:</strong> 32 al 46</p>
+                        <p><strong>Puntos de encuentro:</strong> Familia Calderón Vega, Familia Alfaro.</p>
+                    </div>
+                    <div class="service-card">
+                        <strong>Grupo 4: Salón del Reino</strong>
+                        <p><strong>Territorios:</strong> 47 al 63</p>
+                        <p><strong>Puntos de encuentro:</strong> Familia Vargas Boza, Salón del Reino (solicitar a las demás congregaciones antes de salir).</p>
+                    </div>
+                    <div class="service-card">
+                        <strong>Grupo 5: Carpintera</strong>
+                        <p><strong>Territorios:</strong> 64 al 85</p>
+                        <p><strong>Puntos de encuentro:</strong> Familia Obando, Familia Vega Contreras.</p>
+                    </div>
+                    <div class="service-card">
+                        <strong>Grupo 6: San Vicente</strong>
+                        <p><strong>Territorios:</strong> 86 al 101</p>
+                        <p><strong>Puntos de encuentro:</strong> Guiselle Villachica, Salón del Reino (solicitar a las demás congregaciones antes de salir).</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
